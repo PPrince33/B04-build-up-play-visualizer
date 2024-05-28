@@ -1,6 +1,6 @@
 streamlit
 pandas
-"mplsoccer
+mplsoccer
 numpy
 matplotlib
 termcolor
