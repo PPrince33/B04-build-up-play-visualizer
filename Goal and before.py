@@ -33,8 +33,8 @@ import streamlit as st
 from multiprocessing import freeze_support
 
 def main():
-    B04=pd.read_csv(r"C:\Users\preci\B04.csv")
-    B04_vs=pd.read_csv(r"C:\Users\preci\B04_vs.csv")
+    B04=pd.read_csv("B04.csv")
+    B04_vs=pd.read_csv("B04_vs.csv")
     B04=B04.drop(columns='Unnamed: 0')
     B04['goal_id']=''
     B04.loc[B04['shot_outcome']=='Goal','goal_id']='Player-'+B04['player']+' | Time-'+'['+B04['minute'].astype(str)+':'+B04['second'].astype(str)+']'
